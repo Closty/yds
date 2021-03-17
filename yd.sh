@@ -13,14 +13,12 @@ red(){
 
 #server酱，换行前加上%0D%0A%0D%0A%0D%0A
 function sc_send(){
-#desp=$text1$'\n'视频名称-${yttitle}$'\n'视频身份-${ytname}$'\n'字幕类型-${ytnamezm}$'\n'视频总时长-${yttime}$'\n'视频链接-${ylink}
-desp=$text1%0D%0A%0D%0A%0D%0A视频身份-$ytname%0D%0A%0D%0A%0D%0A字幕类型-$ptzm%0D%0A%0D%0A%0D%0A视频总时长-$yttime%0D%0A%0D%0A%0D%0A视频链接-$ylink%0D%0A%0D%0A%0D%0A视频名称-$yttitle
-#desp1=urlencode(desp)
-curl https://n.clost.net/?form=text\&content=$desp
-sleep 6
-echo "/upload /home/$time.mp4"
-sleep 2
+text1=合成字幕完成
+desp=视频名称-${yttitle}%0D%0A%0D%0A%0D%0A视频身份-${ytname}%0D%0A%0D%0A%0D%0A字幕类型-${ytnamezm}%0D%0A%0D%0A%0D%0A视频总时长-${yttime}%0D%0A%0D%0A%0D%0A视频链接-${ylink}
+#此处设置自己的server酱代码
+curl hhttps://sc.ftqq.com/SCU91034Teb0f33abd2f0c852211d37048e3.send? -X POST -d "text=${text1}&desp=${desp}"
 }
+
 
 #1.下载视频
 function link_ydy(){
