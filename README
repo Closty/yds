@@ -16,6 +16,4 @@
 3.bypy（如果需要上传百度云，否则不需要）
 
 # 命令
-`
-bash <(curl -Lsk https://raw.githubusercontent.com/Closty/yds/master/yd.sh)
-`
+`bash <(curl -Lsk https://raw.githubusercontent.com/Closty/yds/master/yd.sh)`
